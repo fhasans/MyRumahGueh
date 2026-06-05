@@ -266,9 +266,9 @@ for (let cat in result) {
     reorderedItems.forEach(item => {
         let href = `https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=${encodeURIComponent(item.urlValue)}`;
         
-        htmlOutput += `        <a href="${href}" target="_blank" class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">\n`;
-        htmlOutput += `            <span class="text-gray-700 font-medium text-sm"><i class="fa-solid ${item.icon} text-gray-400 group-hover:text-secondary mr-2 w-4"></i>${item.name}</span>\n`;
-        htmlOutput += `            <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± ${item.distanceStr} km</span>\n`;
+        htmlOutput += `        <a href="${href}" target="_blank" class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">\n`;
+        htmlOutput += `            <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i class="fa-solid ${item.icon} text-gray-400 group-hover:text-secondary mr-2 w-4"></i>${item.name}</span>\n`;
+        htmlOutput += `            <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± ${item.distanceStr} km</span>\n`;
         htmlOutput += `        </a>\n`;
     });
     

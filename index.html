@@ -56,11 +56,11 @@
     </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+<body class="overflow-x-hidden w-full max-w-full bg-gray-50 text-gray-800 antialiased">
 
     <!-- Navbar -->
     <nav class="glass-effect fixed w-full z-50 border-b border-gray-200">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="text-xl font-bold text-primary flex items-center gap-2">
                 <i class="fa-solid fa-house-chimney text-secondary"></i>
                 Properti<span class="text-secondary">Sewa</span>
@@ -73,10 +73,10 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="pt-20 sm:pt-24 pb-12 max-w-6xl mx-auto">
+    <main class="pt-24 pb-12 max-w-6xl mx-auto px-4">
 
         <!-- Header Info -->
-        <div class="flex flex-col gap-3 mb-4 px-4 sm:px-0" data-aos="fade-down"
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-6 gap-4" data-aos="fade-down"
             data-aos-duration="800">
             <div>
                 <div class="flex items-center gap-2 mb-2">
@@ -94,16 +94,19 @@
                     Jakarta Selatan, Jagakarsa, Cipedak
                 </p>
             </div>
-            <div class="p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:transform hover:scale-105 transition-all duration-300">
+            <div
+                class="text-left md:text-right w-full md:w-auto p-4 md:p-0 bg-white md:bg-transparent rounded-xl shadow-sm md:shadow-none border border-gray-100 md:border-none hover:transform hover:scale-105 transition-all duration-300">
                 <p class="text-sm text-gray-500 font-medium mb-1">Harga Penawaran</p>
-                <p class="text-3xl font-bold text-secondary">Rp 36 Juta <span
-                        class="text-base text-gray-500 font-normal">/ Tahun</span></p>
+                <p class="text-3xl md:text-4xl font-bold text-secondary">Rp 36 Juta <span
+                        class="text-lg text-gray-500 font-normal">/ Tahun</span></p>
                 <p class="text-sm text-accent font-semibold mt-1"><i
-                        class="fa-solid fa-handshake mr-1 animate-pulse"></i> Harga Masih Bisa Nego</p>
+                        class="fa-solid fa-handshake mr-1 animate-pulse"></i> Harga Masih
+                    Bisa Nego</p>
             </div>
         </div>
 
-        <div class="relative w-full overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-500 bg-gray-900 group mb-4 aspect-video sm:rounded-2xl"
+        <!-- Image Gallery (Carousel) -->
+        <div class="relative w-full rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-500 bg-gray-200 group mb-8 aspect-[4/3] md:aspect-video"
             data-aos="fade-up" data-aos-duration="1000">
             <!-- Images container -->
             <div id="image-container" class="relative w-full h-full">
@@ -132,14 +135,14 @@
         </div>
 
         <!-- Two Column Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-8 px-3 sm:px-0">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
             <!-- Left Column: Details -->
-            <div class="lg:col-span-2 space-y-4 sm:space-y-6">
+            <div class="lg:col-span-2 space-y-6">
 
                 <!-- Quick Stats -->
                 <div data-aos="fade-right" data-aos-delay="100"
-                    class="bg-white p-4 sm:p-6 sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border-t border-b sm:border border-gray-100 grid grid-cols-2 gap-4 transform hover:-translate-y-1">
+                    class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex flex-wrap gap-6 justify-between items-center transform hover:-translate-y-1">
                     <div class="flex items-center gap-3">
                         <div
                             class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-secondary text-xl">
@@ -184,8 +187,8 @@
 
                 <!-- Deskripsi Detail -->
                 <div data-aos="fade-right" data-aos-delay="200"
-                    class="bg-white p-4 sm:p-8 sm:rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border-t border-b sm:border border-gray-100">
-                    <h2 class="text-xl sm:text-2xl font-bold text-primary mb-4 sm:mb-6 border-b pb-3 sm:pb-4">Detail Spesifikasi</h2>
+                    class="bg-white p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
+                    <h2 class="text-2xl font-bold text-primary mb-6 border-b pb-4">Detail Spesifikasi</h2>
 
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-4 mb-8">
                         <div>
@@ -254,20 +257,20 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.363849376741499%2C106.79549070525424"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-mosque text-gray-400 group-hover:text-secondary mr-2 w-4"></i>MASJID
                                     AR-RIDHO</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.1
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.1
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.349777557368566%2C106.77750304338592"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-church text-gray-400 group-hover:text-secondary mr-2 w-4"></i>GEREJA
                                     GPIB Cinere</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 3.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 3.4
                                     km</span>
                             </a>
                         </div>
@@ -278,47 +281,47 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.34350689410226%2C106.79725767372125"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-road text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Tol
                                     Desari (GT Brigif)</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 3.0
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 3.0
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=Stasiun%20Universitas%20Pancasila%2C%20RT.1%2FRW.3%2C%20Lenteng%20Agung%2C%20Kec.%20Jagakarsa%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012610"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-graduation-cap text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Stasiun
                                     Univ. Pancasila</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 9.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 9.4
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.369063777956304%2C106.83207619564213"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-train text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Stasiun
                                     Pondok Cina (Pocin)</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 5.2
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 5.2
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.301235329371195%2C106.83546684175286"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-road text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Tol
                                     JORR (Lenteng Agung)</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 10.7
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 10.7
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.3303619954746635%2C106.8348055796303"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-train text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Stasiun
                                     KRL Lenteng Agung</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 7.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 7.4
                                     km</span>
                             </a>
                         </div>
@@ -329,74 +332,74 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.368553196293595%2C106.79873565404016"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-hospital text-gray-400 group-hover:text-secondary mr-2 w-4"></i>APOTEK
                                     MARYAM</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.7
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.7
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.348914134487393%2C106.80210858721871"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-hospital text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Klinik
                                     Grand Mitra Medika</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.4
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.363552370383682%2C106.80657662285236"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-hospital text-gray-400 group-hover:text-secondary mr-2 w-4"></i>APOTEK
                                     AL-KAHFI</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.5
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.5
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.3706113000857%2C106.81314894597125"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-hospital text-gray-400 group-hover:text-secondary mr-2 w-4"></i>RS
                                     Graha Permata Ibu</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.6
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.363196002297496%2C106.80687004983919"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-hospital text-gray-400 group-hover:text-secondary mr-2 w-4"></i>APOTEK
                                     PERMATA</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.6
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.335811352552236%2C106.82354444068982"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-hospital text-gray-400 group-hover:text-secondary mr-2 w-4"></i>RSU
                                     Zahirah</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 5.7
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 5.7
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.352175286515586%2C106.80139067247003"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-hospital text-gray-400 group-hover:text-secondary mr-2 w-4"></i>APOTEK
                                     AMAZON</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.9
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.31618059604433%2C106.81134552996929"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-hospital text-gray-400 group-hover:text-secondary mr-2 w-4"></i>RSUD
                                     Jagakarsa</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 7.3
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 7.3
                                     km</span>
                             </a>
                         </div>
@@ -407,83 +410,83 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.363789408229785%2C106.79436665866511"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-school text-gray-400 group-hover:text-secondary mr-2 w-4"></i>SMPN
                                     253</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.3
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.3
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.371434331861703%2C106.7905481554935"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-school text-gray-400 group-hover:text-secondary mr-2 w-4"></i>TK
                                     Khalifah Krukut Depok</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.3
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.3
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.362095855519873%2C106.80143631145273"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-school text-gray-400 group-hover:text-secondary mr-2 w-4"></i>SDN
                                     Cipedak 01 Pagi</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.8
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.8
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.355369320578355%2C106.81154277458467"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-graduation-cap text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Institut
                                     Sains dan Teknologi Nasional (ISTN)</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.6
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.362294152569565%2C106.80143699005495"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-school text-gray-400 group-hover:text-secondary mr-2 w-4"></i>SDN
                                     Cipedak 02 Pagi</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.8
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.8
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.360632165562926%2C106.82723885172196"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-graduation-cap text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Univ.
                                     Indonesia (UI)</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 4.5
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 4.5
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.362471136145665%2C106.8016067294451"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-school text-gray-400 group-hover:text-secondary mr-2 w-4"></i>SMPN
                                     131</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.8
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.8
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.339819701912729%2C106.83325426673575"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-graduation-cap text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Univ.
                                     Pancasila (UP)</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 6.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 6.4
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.357554203215393%2C106.80015417054958"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-school text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Madrasah
                                     Aliyah Citra Cendekia</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.1
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.1
                                     km</span>
                             </a>
                         </div>
@@ -494,20 +497,20 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.367858471775571%2C106.79821237569482"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-apple-whole text-gray-400 group-hover:text-secondary mr-2 w-4"></i>IRVANA
                                     BUAH</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.6
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.354385916323398%2C106.801324101931"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-apple-whole text-gray-400 group-hover:text-secondary mr-2 w-4"></i>KING
                                     BUAH MANIS</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.6
                                     km</span>
                             </a>
                         </div>
@@ -518,38 +521,38 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.362768326406577%2C106.80225438492157"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-cart-shopping text-gray-400 group-hover:text-secondary mr-2 w-4"></i>INDOMARET
                                     MATOA</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.9
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.35344271315286%2C106.8017381583543"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-cart-shopping text-gray-400 group-hover:text-secondary mr-2 w-4"></i>FORTUNA
                                     SWALAYAN</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.8
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.8
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.362993871560798%2C106.80210138160838"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-cart-shopping text-gray-400 group-hover:text-secondary mr-2 w-4"></i>ALFAMART
                                     MATOA</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.9
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.337011586668744%2C106.80608116995438"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-cart-shopping text-gray-400 group-hover:text-secondary mr-2 w-4"></i>MR.
                                     DIY</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 4.2
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 4.2
                                     km</span>
                             </a>
                         </div>
@@ -560,37 +563,37 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.34996923474387%2C106.80180722819303"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-gas-pump text-gray-400 group-hover:text-secondary mr-2 w-4"></i>SPBU
                                     PERTAMINA TIMBUL</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.2
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.2
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.353757638008335%2C106.81076263961948"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-gas-pump text-gray-400 group-hover:text-secondary mr-2 w-4"></i>SPBU
                                     PERTAMINA M. Kahfi 2</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.6
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.348636873926239%2C106.8022459834926"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-gas-pump text-gray-400 group-hover:text-secondary mr-2 w-4"></i>SHELL</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.4
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.374164915892488%2C106.81337332733291"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-gas-pump text-gray-400 group-hover:text-secondary mr-2 w-4"></i>SPBU
                                     PERTAMINA Kukusan</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.9
                                     km</span>
                             </a>
                         </div>
@@ -601,47 +604,47 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.363404003317775%2C106.80039365889284"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-dumbbell text-gray-400 group-hover:text-secondary mr-2 w-4"></i>DEAL
                                     2 FIT</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.6
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.3692526224459165%2C106.80844254116629"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-dumbbell text-gray-400 group-hover:text-secondary mr-2 w-4"></i>MASTER
                                     GYM</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.9
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.363303373750421%2C106.80019517542752"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-dumbbell text-gray-400 group-hover:text-secondary mr-2 w-4"></i>IDEAL
                                     GYM MATOA</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.6
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.373157070288325%2C106.78512089991578"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-dumbbell text-gray-400 group-hover:text-secondary mr-2 w-4"></i>READY
                                     2 FIT GYM</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.0
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.0
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.354975403170294%2C106.80120027054959"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-dumbbell text-gray-400 group-hover:text-secondary mr-2 w-4"></i>HOUSE
                                     OF METAMORFIT JAGAKARSA</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.5
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.5
                                     km</span>
                             </a>
                         </div>
@@ -652,29 +655,29 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.366150521824285%2C106.79458591569058"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-hammer text-gray-400 group-hover:text-secondary mr-2 w-4"></i>TB.
                                     BERKAH JAYA</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.3
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.3
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.368215912512539%2C106.79841601249602"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-hammer text-gray-400 group-hover:text-secondary mr-2 w-4"></i>TOKO
                                     BAHAN BANGUNAN SUKMA JAYA</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.6
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.368028649895167%2C106.79831677073055"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-hammer text-gray-400 group-hover:text-secondary mr-2 w-4"></i>TB
                                     MITRA HIKMAT "B"</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.6
                                     km</span>
                             </a>
                         </div>
@@ -685,55 +688,55 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.362900469730526%2C106.80207318363212"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-burger text-gray-400 group-hover:text-secondary mr-2 w-4"></i>D'BESTO</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.9
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.350575472510577%2C106.80180713743975"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-burger text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Domino's
                                     Pizza M Kahfi I</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.2
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.2
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.37194907258795%2C106.80065362291471"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-burger text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Sushi
                                     Stop Beji</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.3
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.3
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.349248303070185%2C106.80168787054959"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-burger text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Hokben
                                     Moh. Kahfi</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.3
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.3
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.363230969735878%2C106.80689607400548"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-burger text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Pizza
                                     Hut</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.6
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.335060171086688%2C106.80677200708182"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-burger text-gray-400 group-hover:text-secondary mr-2 w-4"></i>KFC
                                     Box Jagakarsa</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 4.5
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 4.5
                                     km</span>
                             </a>
                         </div>
@@ -744,54 +747,54 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.366514403372262%2C106.79825055151319"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-mug-hot text-gray-400 group-hover:text-secondary mr-2 w-4"></i>KEDAI
                                     TheSakbin</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.4
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.363552198687151%2C106.80642132359762"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-mug-hot text-gray-400 group-hover:text-secondary mr-2 w-4"></i>MOMOYO</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.5
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.5
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.363245051502104%2C106.80250052605112"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-mug-hot text-gray-400 group-hover:text-secondary mr-2 w-4"></i>ALESKA
                                     COFFEE & LOUNGE</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.9
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.376013336347865%2C106.80147622944509"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-mug-hot text-gray-400 group-hover:text-secondary mr-2 w-4"></i>HAUS</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.9
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.36355086520488%2C106.80645620907933"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-mug-hot text-gray-400 group-hover:text-secondary mr-2 w-4"></i>KOPI
                                     KENANGAN</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.5
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.5
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.336153367553593%2C106.80637434458706"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-mug-hot text-gray-400 group-hover:text-secondary mr-2 w-4"></i>KOPTAN
                                     (Kopi Ketan)</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 4.3
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 4.3
                                     km</span>
                             </a>
                         </div>
@@ -802,407 +805,407 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.364771336922604%2C106.79693699999736"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>WARUNG
                                     SOP IGA PAK PUR</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.1
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.1
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.373009337077666%2C106.80070812944507"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>BEBEK
                                     PINANG MADURA BY TANITA</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.4
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.365109170510271%2C106.79829169999734"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>NASI
                                     GORENG MAZ BAGONG</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.3
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.3
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.372893381995673%2C106.80086839143227"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>RM
                                     AMPERA SAIYO 2</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.4
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.364926503344443%2C106.7979377705496"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>NASI
                                     UDUK LONTONG SAYUR SARI KOKO</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.3
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.3
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.372646203479729%2C106.8006522294451"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>SOTO
                                     BETAWI MADANI</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.4
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.36513903692951%2C106.79823254110183"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>WARUNG
                                     SOTO & AYAM PENYET ERNA</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.3
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.3
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.373452437086019%2C106.8008335705496"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>DAPUR
                                     SEBLAK 81</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.5
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.5
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.365358955040155%2C106.7980642324876"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>AYAM
                                     BAKAR & IKAN BAKAR SURAMADU CAK SENO</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.3
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.3
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.37327650537916%2C106.80079669017596"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>NASI
                                     GORENG WIJAYA</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.5
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.5
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.366371336203853%2C106.79819997054962"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>WARUNG
                                     SATE SOLO PAK NO</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.4
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.374580837107277%2C106.80117044110182"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>Mie
                                     Ayam Jamur Hoko</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.6
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.366318022836224%2C106.79823349816199"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>NASI
                                     BEBEK MADURA CAK IQBAL</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.4
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.374543633549074%2C106.80102768560025"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>NASI
                                     UDUK ASLI BETAWI MPOK EDAH</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.6
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.3662869018712485%2C106.7980351594909"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>THE
                                     SATE</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.4
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.374525641421841%2C106.80097941078255"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>NASI
                                     BEBEK MUL</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.6
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.366895136962557%2C106.79630531165411"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>NASI
                                     UDUK BUDE NANI</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.4
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.3753352363377305%2C106.80116801826318"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>MARI
                                     NGE'JUICE</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.7
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.7
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.366157536200662%2C106.7942676294451"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>MIE
                                     AYAM & NASI GORENG HERI BANDUNG</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.4
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.4
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.3750317371157665%2C106.8010705999974"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>BAKSO
                                     & MIE AYAM STY</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.7
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.7
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.368087036984995%2C106.79835572944509"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>RM
                                     AMPERA SAIYO CURUG</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.6
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.6
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.376529067195579%2C106.80149117916417"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>ARCHIC
                                     Ayam Geprek Crispy</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.9
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.3690614258955724%2C106.7991368535248"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>AYAM
                                     GEPREK BANG ROHMANI</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.8
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.8
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.376751032032791%2C106.801303634519"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>SEAFOOD
                                     14 KING</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.9
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.368831370585148%2C106.79902104107724"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>PECEL
                                     AYAM & NASI UDUK MAS RIZKY</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.8
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.8
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.376696989246852%2C106.80126612568469"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>SEMEJA
                                     - Bakso & Bakwan & Yogurt</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.9
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.369106484124276%2C106.79903187811959"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>RM
                                     BUNGO SARAI</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.8
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.8
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.377081336942741%2C106.8014459020664"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>PANCONG
                                     LUMER SULTAN</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.0
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.0
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.368954541821406%2C106.79905668855277"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>AYAM
                                     PENYET SAMBAL IJO</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.8
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.8
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.377242303560366%2C106.80159432944511"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>RM
                                     AMPERA SAIYO 1</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.0
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.0
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.369355515255397%2C106.79919357627074"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>LAMBE
                                     DIMSUM</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.8
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.8
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.3767577846110965%2C106.80147928098893"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>ROSCIK
                                     RADEN SANIM</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.0
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.0
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.369857737018326%2C106.7994216705496"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>WARUNG
                                     NASI RAWON & PECEL MADIUN</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.9
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.3775951264658435%2C106.80163765432258"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>SATE
                                     TAICHAN SAMBER 88</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.1
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.1
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.369751670603663%2C106.79956359999736"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>NASI
                                     LIWET BAROKAH</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.9
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.378020237172098%2C106.80152082944512"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>NASI
                                     GORENG SEMERBAK</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 2.1
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 2.1
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.36940828422612%2C106.79919559260183"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>RM
                                     PADANG PUTRA BUNGSU</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 0.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 0.9
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.3389421028902335%2C106.80510049999735"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>SATE
                                     PADANG PIAMAN JAYA</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 3.9
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 3.9
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.370060992805151%2C106.79967916261603"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>MENDADAK
                                     WARKOP</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.0
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.0
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.337953436419147%2C106.80554489999737"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>NASI
                                     BEBEK RICA RICA SPECIAL</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 4.1
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 4.1
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.363444569739328%2C106.8029349705496"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>RM
                                     AUE SARUMPUN</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.0
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.0
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.337649602867693%2C106.80566754110183"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>BURGER
                                     BUNDER CIGANJUR</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 4.1
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 4.1
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.3706997034456085%2C106.79988262944512"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>AYAM
                                     BAKAR KALIO</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.1
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.1
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.337611614974045%2C106.80559780366806"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>WARUNG
                                     TENDA CIGANJUR</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 4.1
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 4.1
                                     km</span>
                             </a>
                             <a href="https://www.google.com/maps/dir/?api=1&origin=Gg.+Atin+No.+73A,+Cipedak,+Jagakarsa,+Jakarta+Selatan&destination=-6.372446280766697%2C106.80076152946148"
                                 target="_blank"
-                                class="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
-                                <span class="text-gray-700 font-medium text-sm"><i
+                                class="flex items-center justify-between p-3 overflow-hidden rounded-xl border border-gray-100 bg-white hover:bg-blue-50 hover:border-blue-200 shadow-sm hover:shadow-md transition-all duration-300 group">
+                                <span class="text-gray-700 font-medium text-sm flex-1 pr-2 min-w-0 break-words leading-tight"><i
                                         class="fa-solid fa-utensils text-gray-400 group-hover:text-secondary mr-2 w-4"></i>D'BESTO
                                     RADEN SANIM</span>
-                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md">± 1.3
+                                <span class="text-xs font-bold text-secondary bg-blue-100 px-2 py-1 rounded-md whitespace-nowrap flex-shrink-0">± 1.3
                                     km</span>
                             </a>
                         </div>
@@ -1249,23 +1252,6 @@
         </div>
     </main>
 
-    <!-- Sticky WhatsApp Bar (Mobile Only) -->
-    <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 p-3 flex gap-2 shadow-lg">
-        <a href="https://wa.me/6289673589846?text=Halo,%20saya%20melihat%20iklan%20rumah%20disewakan%20(Rp%2036jt/thn).%20Apakah%20masih%20tersedia?"
-            target="_blank"
-            class="flex items-center justify-center gap-2 flex-1 bg-[#25D366] text-white py-3 rounded-xl font-bold text-sm">
-            <i class="fa-brands fa-whatsapp text-lg"></i> WA Nomor 1
-        </a>
-        <a href="https://wa.me/6289605512301?text=Halo,%20saya%20melihat%20iklan%20rumah%20disewakan%20(Rp%2036jt/thn).%20Apakah%20masih%20tersedia?"
-            target="_blank"
-            class="flex items-center justify-center gap-2 flex-1 bg-white border-2 border-[#25D366] text-[#25D366] py-3 rounded-xl font-bold text-sm">
-            <i class="fa-brands fa-whatsapp text-lg"></i> WA Nomor 2
-        </a>
-    </div>
-
-    <!-- Padding bottom for mobile sticky bar -->
-    <div class="lg:hidden h-20"></div>
-
     <!-- Footer -->
     <footer class="bg-primary text-gray-400 py-8 border-t border-gray-800 mt-8">
         <div class="max-w-6xl mx-auto px-4 text-center">
@@ -1299,7 +1285,7 @@
                 const img = document.createElement('img');
                 img.src = encodeURI(imagePath);
                 img.alt = `Preview Rumah ${index + 1}`;
-                img.className = `absolute top-0 left-0 w-full h-full object-contain transition-all duration-700 ease-out ${index === 0 ? 'opacity-100 scale-100 z-10' : 'opacity-0 scale-105 z-0'}`;
+                img.className = `absolute top-0 left-0 w-full h-full object-cover transition-all duration-700 ease-out ${index === 0 ? 'opacity-100 scale-100 z-10' : 'opacity-0 scale-105 z-0'}`;
                 img.id = `slide-${index}`;
 
                 // Add skeleton loading effect while image loads
